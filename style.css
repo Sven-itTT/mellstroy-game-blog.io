@@ -1,0 +1,69 @@
+:root{
+  --accent-purple:#9f4aff;
+  --accent-green:#00ff66;
+  --card-bg: rgba(255,255,255,0.03);
+  --text-shadow: 0 0 12px rgba(159,74,255,0.08);
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;height:100%;font-family:'Poppins',sans-serif;color:#fff;scroll-behavior:smooth;position:relative;}
+
+body::before{
+  content:'';
+  position:fixed;
+  top:0; left:0; width:100%; height:100%;
+  background: linear-gradient(to bottom, #6a1b9a 0%, #8e24aa 50%, #9f4aff 100%);
+  z-index:-1;
+  pointer-events:none;
+}
+
+#loader{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#000;z-index:9999;transition:opacity .6s;}
+#loader.hide{opacity:0;pointer-events:none;}
+.loader-gif{width:160px;filter:drop-shadow(0 20px 40px rgba(159,74,255,0.18));}
+
+.topbar{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:#000;z-index:50;border-bottom:1px solid rgba(159,74,255,0.06);}
+.left{display:flex;align-items:center;gap:12px;}
+.logo{width:56px;height:56px;border-radius:10px;object-fit:cover;box-shadow:0 8px 30px rgba(159,74,255,0.08);}
+.brand-title{font-weight:700;font-size:20px;background:linear-gradient(90deg,var(--accent-purple),#3b0073);background-size:200% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:textFlow 4s linear infinite;}
+.brand-title.scrolled{background:linear-gradient(90deg,var(--accent-green),#00c85c);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+@keyframes textFlow{0%{background-position:0% 50%;}100%{background-position:100% 50%;}}
+
+.socials{display:flex;align-items:center;gap:12px;}
+.soc{color:#fff;font-weight:600;}
+.soc:hover{color:var(--accent-purple);transition:.2s;}
+
+main{padding:18px 20px 80px;display:flex;flex-direction:column;align-items:center;}
+.section{padding:18px 0 24px;max-width:1100px;width:100%;text-align:center;}
+.section-title{font-size:22px;color:var(--accent-purple);text-shadow:2px 2px #000;margin-bottom:16px;}
+
+.cards{display:flex;gap:14px;overflow-x:auto;padding-bottom:10px;}
+.card{min-width:200px;flex:0 0 auto;background:var(--card-bg);border-radius:12px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;transition:.28s;}
+.card img{width:100%;height:140px;object-fit:cover;}
+.card-foot{
+  padding:10px;
+  font-weight:600;
+  font-size:14px;
+  color:var(--accent-purple); /* фиолетовый текст для всех карточек кроме Kick */
+  background:#000;
+  text-align:center;
+  letter-spacing:0.3px;
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(159,74,255,0.12);}
+
+/* KICK SECTION */
+.kick-section{width:100%;margin-top:60px;text-align:center;display:flex;flex-direction:column;align-items:center;transition:background .6s ease;}
+.kick-title{
+  font-size:48px;font-weight:800;
+  background:#9f4aff; /* верхний фиолетовый фон */
+  color:#00ff66;      /* кислотно-зелёный текст KICK */
+  padding:10px 20px;
+  border-radius:12px;
+  display:inline-block;
+  margin-bottom:12px;
+}
+.kick-status{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.status-dot{width:16px;height:16px;border-radius:50%;background:red;}
+.status-text{font-size:18px;font-weight:600;}
+#admin-toggle{padding:6px 12px;margin-bottom:20px;cursor:pointer;background:#111;color:#fff;border-radius:8px;border:none;}
+.contact-text{margin-top:30px;color:rgba(255,255,255,0.5);font-size:14px;}
+.footer{position:fixed;right:12px;bottom:8px;font-size:12px;color:rgba(255,255,255,0.18);}

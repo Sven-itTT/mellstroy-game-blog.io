@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mellstroy Game</title>
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <img src="loading.gif" alt="loading" class="loader-gif" />
+</div>
+
+<!-- HEADER -->
+<header class="topbar">
+  <div class="left">
+    <img src="mellstroy.jpg" alt="logo" class="logo">
+    <div class="brand-title" id="brand-title">Mellstroy Game</div>
+  </div>
+  <div class="right socials">
+    <a href="https://instagram.com/" target="_blank" class="soc">IG</a>
+    <a href="https://www.tiktok.com/@32lord23?is_from_webapp=1&sender_device=pc" target="_blank" class="soc">TT</a>
+    <a href="https://t.me/" target="_blank" class="soc">TG</a>
+  </div>
+</header>
+
+<main>
+  <!-- НОВОСТИ -->
+  <section id="news" class="section">
+    <h2 class="section-title">НОВОСТИ</h2>
+    <div class="cards">
+      <div class="card"><img src="1.jpg"><div class="card-foot">победители первой квартиры</div></div>
+      <div class="card"><img src="1"><div class="card-foot">НОЧНОЙ РОЛИК</div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">МОЙ СТИЛЬ</div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1520975680973-9c3b3bf6d3a4?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">ВЕЧЕРИНКА</div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1531123414780-f8f3b8a7b60f?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">ВАЙБ</div></div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section id="instagram" class="section">
+    <h2 class="section-title">INSTAGRAM</h2>
+    <div class="cards" id="insta-feed">
+      <div class="card"><img src="inst1.jpg"><div class="card-foot">пошла возня</div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1520975680973-9c3b3bf6d3a4?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">ВЕЧЕРИНКА</div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1531123414780-f8f3b8a7b60f?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">ВАЙБ</div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1515169067865-5387ec356754?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">ЗА КАДРОМ</div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">НОВЫЙ КОНТЕНТ</div></div>
+    </div>
+  </section>
+
+  <!-- TIKTOK -->
+  <section id="tiktok" class="section">
+    <h2 class="section-title">TIKTOK</h2>
+    <div class="cards">
+      <a href="https://www.tiktok.com/@mellstroy" target="_blank" class="card">
+        <img src="https://images.unsplash.com/photo-1596495578068-8ec8f6c7a9b9?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-foot">СВЕЖИЙ КЛИП</div>
+      </a>
+      <a href="https://www.tiktok.com/@mellstroy/video/1" target="_blank" class="card">
+        <img src="https://images.unsplash.com/photo-1605733160314-4d91bbf09a3a?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-foot">НОВЫЙ ВАЙБ</div>
+      </a>
+      <a href="https://www.tiktok.com/@mellstroy/video/2" target="_blank" class="card">
+        <img src="https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-foot">ТАНЕЦ НА СТРИМЕ</div>
+      </a>
+      <a href="https://www.tiktok.com/@mellstroy/video/3" target="_blank" class="card">
+        <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-foot">МЕМЫ</div>
+      </a>
+      <a href="https://www.tiktok.com/@mellstroy/video/4" target="_blank" class="card">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-foot">ЛУЧШИЕ МОМЕНТЫ</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- KICK -->
+  <section class="kick-section">
+    <div class="kick-header">
+      <div class="kick-title">KICK</div>
+      <div class="kick-status">
+        <span class="status-dot" id="kick-dot"></span>
+        <span class="status-text" id="kick-text">Не в сети</span>
+      </div>
+      <button id="admin-toggle">Переключить статус</button>
+    </div>
+    <div class="kick-cards cards">
+      <div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">Стрим 1</div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1520975680973-9c3b3bf6d3a4?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">Стрим 2</div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1531123414780-f8f3b8a7b60f?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">Стрим 3</div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1515169067865-5387ec356754?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">Стрим 4</div></div>
+    </div>
+    <div class="contact-text">Связаться со мной: (тут текст)</div>
+  </section>
+</main>
+
+<footer class="footer">Создатель: L0rd</footer>
+
+<script>
+  // loader
+  window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    setTimeout(() => {
+      loader.classList.add('hide');
+      setTimeout(()=> loader.remove(), 600);
+    }, 900);
+  });
+
+  // Kick статус
+  const kickDot = document.getElementById('kick-dot');
+  const kickText = document.getElementById('kick-text');
+  const toggle = document.getElementById('admin-toggle');
+  let online = false;
+  toggle.addEventListener('click', () => {
+    online = !online;
+    if(online){
+      kickDot.style.background = "#00ff66";
+      kickText.textContent = "В сети";
+      document.querySelector('.kick-section').style.background = "rgba(0,255,100,0.05)";
+    }else{
+      kickDot.style.background = "red";
+      kickText.textContent = "Не в сети";
+      document.querySelector('.kick-section').style.background = "transparent";
+    }
+  });
+
+  // смена цвета логотипа при скролле
+  const brand = document.getElementById('brand-title');
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const switchPoint = 300;
+    if(scrollY > switchPoint){
+      brand.classList.add('scrolled');
+    }else{
+      brand.classList.remove('scrolled');
+    }
+  });
+</script>
+</body>
+</html>
