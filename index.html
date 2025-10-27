@@ -1,146 +1,269 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mellstroy Game</title>
-<link href="style.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mellstream - Official Mellstroy Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script type="text/javascript" src="https://www.tiktok.com/embed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.11.6/dist/ffmpeg.min.js"></script>
 </head>
-<body>
-
-<!-- LOADER -->
-<div id="loader">
-  <img src="loading.gif" alt="loading" class="loader-gif" />
+<div id="preloader">
+  <div class="loader">
+    <img src="STYLE/money.gif" alt="loading" class="loader-gif">
+  </div>
 </div>
-
-<!-- HEADER -->
-<header class="topbar">
-  <div class="left">
-    <img src="img/mellstroy.jpg" alt="logo" class="logo">
-    <div class="brand-title" id="brand-title">Mellstroy Game</div>
-  </div>
-  <div class="right socials">
-    <a href="https://instagram.com/" target="_blank" class="soc">IG</a>
-    <a href="https://www.tiktok.com/@32lord23?is_from_webapp=1&sender_device=pc" target="_blank" class="soc">TT</a>
-    <a href="https://t.me/" target="_blank" class="soc">TG</a>
-  </div>
-</header>
-
-<main>
-  <!-- НОВОСТИ -->
-  <section id="news" class="section">
-    <h2 class="section-title">НОВОСТИ</h2>
-    <div class="cards">
-      <div class="card"><img src="img/1.jpg"><div class="card-foot">победители первой квартиры</div></div>
-      <div class="card"><img src="1"><div class="card-foot">НОЧНОЙ РОЛИК</div></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">МОЙ СТИЛЬ</div></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1520975680973-9c3b3bf6d3a4?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">ВЕЧЕРИНКА</div></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1531123414780-f8f3b8a7b60f?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">ВАЙБ</div></div>
+    <div class="top-bar bg-gray-900 border-b border-gray-800 py-3 px-6 flex items-center gap-4">
+        <img src="STYLE/mellstroy.jpg" alt="Mellstroy Logo" class="w-10 h-10 rounded-lg">
+        <h1 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-600 to-fuchsia-500 animate-text">
+            Mellstroy <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600 animate-text">Game</span>
+</h1>
     </div>
-  </section>
+    <custom-navbar></custom-navbar>
+<main class="container mx-auto px-4 py-8">
+    
+        <section id="hero" class="mb-16 flex flex-col md:flex-row gap-8 items-center">
+          
+            <div class="w-full md:w-1/2 bg-gray-800 rounded-2xl p-6 shadow-xl">
+                <h2 class="section-heading text-2xl font-bold">Mellstroy Tracks</h2>
+<div id="music-player" class="space-y-4"></div>
+            </div>
+            <div class="w-full md:w-1/2 bg-gray-800 rounded-2xl p-4 shadow-xl h-auto">
+                <h2 class="section-heading text-xl">
+                    <i data-feather="alert-circle"></i>Новости
+                </h2>
+                <div class="space-y-3 h-[280px] overflow-y-auto pr-2">
+                    <div class="bg-gray-700/50 rounded-lg p-3 border-l-4 border-purple-500 h-[100px] flex flex-col justify-center">
+<div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg">РОЗЫГРЫШ КВАРТИР от Mellstroy</h3>
+                            <span class="text-xs text-gray-400">17 october 25</span>
+                        </div>
+                        <p class="text-gray-300 text-sm">С 17 октября по 17 ноября 2025 года я буду покупать по одной квартире в день каждому тиктокеру, который мне понравится.</p>
+                        <div class="mt-2 flex justify-end">
+                            <button class="read-more-btn text-purple-400 text-xs hover:underline"></button>
+                        </div>
+                    </div>
+                    <div class="news-item bg-gray-700/50 rounded-lg p-3 backdrop-blur-sm border-l-4 border-purple-500 h-[100px] flex flex-col justify-center">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-md">TikTok удалил хэштег #MellstroyGame</h3>
+<span class="text-xs text-gray-400">2 days ago</span>
+                        </div>
+                        <p class="text-gray-300 text-sm">TikTok удалил хэштег #MellstroyGame из-за контента, нарушающего правила сообщества</p>
+                        <div class="mt-2 flex justify-end">
+                            <button class="read-more-btn text-purple-400 text-xs hover:underline"></button>
+                        </div>
+                    </div>
+                    <div class="news-item bg-gray-700/50 rounded-lg p-3 backdrop-blur-sm border-l-4 border-purple-500 h-[100px] flex flex-col justify-center">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-md">КОНКУРС продолжается</h3>
+<span class="text-xs text-gray-400">1 week ago</span>
+                        </div>
+                        <p class="text-gray-300 text-sm">конкурс из за удаления #MellstroyGame не приостанавливается</p>
+                        <div class="mt-2 flex justify-end">
+                            <button class="read-more-btn text-purple-400 text-xs hover:underline"></button>
+                        </div>
+</section>
+        <section id="instagram" class="mb-16 relative overflow-hidden">
+            <div class="absolute -top-20 -right-20 w-60 h-60 bg-pink-600 rounded-full filter blur-[120px] opacity-20 -z-10"></div>
+            <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-purple-600 rounded-full filter blur-[120px] opacity-20 -z-10"></div>
+            
+            <div class="relative z-10">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+                    <div class="max-w-2xl">
+                        <h2 class="section-heading text-4xl md:text-5xl font-extrabold mb-4">
+                            <i data-feather="instagram" class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500"></i> 
+                            Instagram
+                        </h2>
+                        <p class="text-gray-300 text-lg">
+                           
+</p>
+</div>
+                    <a href="https://www.instagram.com/mellstroy" target="_blank" class="mt-6 md:mt-0 btn-purple glow-on-hover">
+                        <i data-feather="external-link" class="mr-2"></i> 
+                    </a>
+                </div>
 
-  <!-- INSTAGRAM -->
-  <section id="instagram" class="section">
-    <h2 class="section-title">INSTAGRAM</h2>
-    <div class="cards" id="insta-feed">
-      <div class="card"><img src="inst1.jpg"><div class="card-foot">пошла возня</div></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1520975680973-9c3b3bf6d3a4?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">ВЕЧЕРИНКА</div></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1531123414780-f8f3b8a7b60f?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">ВАЙБ</div></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1515169067865-5387ec356754?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">ЗА КАДРОМ</div></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">НОВЫЙ КОНТЕНТ</div></div>
-    </div>
-  </section>
+                <div id="instagram-feed" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+            </div>
+        </section>
+    
+        <section id="tiktok" class="mb-16 relative overflow-hidden">
+            <div class="absolute -top-20 -left-20 w-60 h-60 bg-pink-600 rounded-full filter blur-[120px] opacity-20 -z-10"></div>
+            <div class="absolute -bottom-20 -right-20 w-60 h-60 bg-purple-600 rounded-full filter blur-[120px] opacity-20 -z-10"></div>
+            <div class="relative z-10">
+                <div class="flex justify-between items-center mb-12">
+                    <h2 class="section-heading text-3xl md:text-4xl font-extrabold">
+                        <i data-feather="music" class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500"></i> 
+                        TikTok
+                    </h2>
+                    <a href="https://www.tiktok.com/@mellstroy" target="_blank" class="btn-purple glow-on-hover">
+                        <i data-feather="external-link" class="mr-2"></i> 
+                    </a>
+                </div>
+                <div id="tiktok-feed" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+            </div>
+        </section>
 
-  <!-- TIKTOK -->
-  <section id="tiktok" class="section">
-    <h2 class="section-title">TIKTOK</h2>
-    <div class="cards">
-      <a href="https://www.tiktok.com/@mellstroy" target="_blank" class="card">
-        <img src="https://images.unsplash.com/photo-1596495578068-8ec8f6c7a9b9?q=80&w=1200&auto=format&fit=crop">
-        <div class="card-foot">СВЕЖИЙ КЛИП</div>
-      </a>
-      <a href="https://www.tiktok.com/@mellstroy/video/1" target="_blank" class="card">
-        <img src="https://images.unsplash.com/photo-1605733160314-4d91bbf09a3a?q=80&w=1200&auto=format&fit=crop">
-        <div class="card-foot">НОВЫЙ ВАЙБ</div>
-      </a>
-      <a href="https://www.tiktok.com/@mellstroy/video/2" target="_blank" class="card">
-        <img src="https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?q=80&w=1200&auto=format&fit=crop">
-        <div class="card-foot">ТАНЕЦ НА СТРИМЕ</div>
-      </a>
-      <a href="https://www.tiktok.com/@mellstroy/video/3" target="_blank" class="card">
-        <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1200&auto=format&fit=crop">
-        <div class="card-foot">МЕМЫ</div>
-      </a>
-      <a href="https://www.tiktok.com/@mellstroy/video/4" target="_blank" class="card">
-        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1200&auto=format&fit=crop">
-        <div class="card-foot">ЛУЧШИЕ МОМЕНТЫ</div>
-      </a>
-    </div>
-  </section>
+        <section id="telegram" class="mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="section-heading">
+                    <i data-feather="send"></i> Telegram
+                </h2>
+<a href="https://t.me/tellstroy" target="_blank" class="btn-purple">
+                    Join Channel
+                </a>
+            </div>
+            <div id="telegram-feed" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+        </section>
 
-  <!-- KICK -->
-  <section class="kick-section">
-    <div class="kick-header">
-      <div class="kick-title">KICK</div>
-      <div class="kick-status">
-        <span class="status-dot" id="kick-dot"></span>
-        <span class="status-text" id="kick-text">Не в сети</span>
-      </div>
-      <button id="admin-toggle">Переключить статус</button>
-    </div>
-    <div class="kick-cards cards">
-      <div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">Стрим 1</div></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1520975680973-9c3b3bf6d3a4?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">Стрим 2</div></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1531123414780-f8f3b8a7b60f?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">Стрим 3</div></div>
-      <div class="card"><img src="https://images.unsplash.com/photo-1515169067865-5387ec356754?q=80&w=1200&auto=format&fit=crop"><div class="card-foot">Стрим 4</div></div>
-    </div>
-    <div class="contact-text">Связаться со мной: (тут текст)</div>
-  </section>
+  
+        <section id="kick-streams" class="mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="section-heading">
+                    <i data-feather="tv"></i> Kick
+                </h2>
+<a href="" target="_blank" class="btn-purple">
+                    Watch Live
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <a href="https://kick.com/mellstroy" target="_blank" class="kick-stream rounded-xl overflow-hidden relative">
+                    <div class="aspect-video relative">
+                        <img src="STYLE/ct6.jpg" alt="LIVE Stream" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                                <i data-feather="play" class="w-8 h-8 text-white ml-1"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="bg-red-500 rounded-full w-3 h-3 animate-pulse"></span>
+                                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded font-bold"> NO LIVE</span>
+                                <span class="text-white text-sm">110K просмотров</span>
+                            </div>
+                            <h3 class="font-bold text-xl text-white">НОЧЬ</h3>
+                            <p class="text-gray-300">Все ссылки в описании</p>
+                        </div>
+                    </div>
+                </a>
+<div class="grid grid-cols-2 gap-4">
+                    <a href="https://kick.com/mellstroy987" target="_blank" class="kick-stream rounded-xl p-4 flex flex-col justify-between">
+                        <div class="aspect-video rounded-lg mb-2 overflow-hidden relative">
+                            <img src="STYLE/ct4.jpg" alt="Previous Stream" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-2 left-2 right-2">
+                                <span class="text-white text-xs font-semibold">25 october 25</span>
+                            </div>
+                        </div>
+                        <h3 class="font-bold">Решаем по конкурсу</h3>
+                        <p class="text-gray-300 text-sm">Все ссылки в описании</p>
+                        <div class="flex items-center gap-2 mt-2">
+                            <i data-feather="eye" class="w-4 h-4"></i>
+                            <span class="text-xs">97k просмотров</span>
+                        </div>
+                    </a>
+                    <a href="https://kick.com/mellstroy987" target="_blank" class="kick-stream rounded-xl p-4 flex flex-col justify-between">
+                        <div class="aspect-video rounded-lg mb-2 overflow-hidden relative">
+                            <img src="STYLE/ct3.jpg" alt="Highlights" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-2 left-2 right-2">
+                                <span class="text-white text-xs font-semibold">23 october 25</span>
+                            </div>
+                        </div>
+                        <h3 class="font-bold">Дарю квартиры</h3>
+                        <p class="text-gray-300 text-sm">Все ссылки в описании</p>
+                        <div class="flex items-center gap-2 mt-2">
+                            <i data-feather="eye" class="w-4 h-4"></i>
+                            <span class="text-xs">153k просмотров</span>
+                        </div>
+                    </a>
+                    <a href="https://kick.com/mellstroy987" target="_blank" class="kick-stream rounded-xl p-4 flex flex-col justify-between">
+                        <div class="aspect-video rounded-lg mb-2 overflow-hidden relative">
+                            <img src="STYLE/ct2.jpg" alt="Gaming" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-2 left-2 right-2">
+                                <span class="text-white text-xs font-semibold">23 october 25</span>
+                            </div>
+                        </div>
+                        <h3 class="font-bold">Дарю квартиры</h3>
+                        <p class="text-gray-300 text-sm">все ссылки в описании</p>
+                        <div class="flex items-center gap-2 mt-2">
+                            <i data-feather="eye" class="w-4 h-4"></i>
+                            <span class="text-xs">85k</span>
+                        </div>
+                    </a>
+                    <a href="https://kick.com/mellstroy987" target="_blank" class="kick-stream rounded-xl p-4 flex flex-col justify-between">
+                        <div class="aspect-video rounded-lg mb-2 overflow-hidden relative">
+                            <img src="STYLE/ct1.jpg" alt="IRL Stream" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-2 left-2 right-2">
+                                <span class="text-white text-xs font-semibold">22 october 25</span>
+                            </div>
+                        </div>
+                        <h3 class="font-bold">Рекордная чума</h3>
+                        <p class="text-gray-300 text-sm">все ссылки в описании</p>
+                        <div class="flex items-center gap-2 mt-2">
+                            <i data-feather="eye" class="w-4 h-4"></i>
+                            <span class="text-xs">152K просмотров</span>
+                        </div>
+                    </a>
+</div>
+            </div>
+        </section>
+        <section id="social-links" class="mb-16 relative overflow-hidden">
+            <div class="absolute -top-20 -left-20 w-40 h-40 bg-purple-600 rounded-full filter blur-3xl opacity-10"></div>
+            <div class="absolute -bottom-20 -right-20 w-40 h-40 bg-pink-600 rounded-full filter blur-3xl opacity-10"></div>
+            
+            <div class="relative z-10">
+                <h2 class="section-heading text-white">
+                    <i data-feather="link"></i> Contacts
+                </h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <a href="https://www.instagram.com/mellstroy" target="_blank" class="social-link">
+                        <div class="icon-container mb-3">
+                            <i class="fab fa-instagram text-3xl text-white"></i>
+                        </div>
+                        <span class="text-white font-semibold">Instagram</span>
+                        <p class="text-white/70 text-sm mt-1">@mellstroy</p>
+                        <div class="absolute inset-0 bg-gradient-to-br from-pink-600 to-purple-600 opacity-70 -z-10"></div>
+                    </a>
+                    <a href="https://www.tiktok.com/@glavstroy" target="_blank" class="social-link">
+                        <div class="icon-container mb-3">
+                            <i class="fab fa-tiktok text-3xl text-white"></i>
+                        </div>
+                        <span class="text-white font-semibold">TikTok</span>
+                        <p class="text-white/70 text-sm mt-1">@glavstroy</p>
+                        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 to-black opacity-70 -z-10"></div>
+                    </a>
+                    <a href="https://t.me/tellstroy" target="_blank" class="social-link">
+                        <div class="icon-container mb-3">
+                            <i class="fab fa-telegram text-3xl text-white"></i>
+                        </div>
+                        <span class="text-white font-semibold">Telegram</span>
+                        <p class="text-white/70 text-sm mt-1">@tellstroy</p>
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 opacity-70 -z-10"></div>
+                    </a>
+                    <a href="https://kick.com/mellstroy987" target="_blank" class="social-link">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-broadcast-tower text-3xl text-white"></i>
+                        </div>
+                        <span class="text-white font-semibold">Kick</span>
+                        <p class="text-white/70 text-sm mt-1">mellstroy987</p>
+                        <div class="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 opacity-70 -z-10"></div>
+                    </a>
+</div>
+</div>
+        </section>
 </main>
-
-<footer class="footer">Создатель: L0rd</footer>
-
-<script>
-  // loader
-  window.addEventListener('load', () => {
-    const loader = document.getElementById('loader');
-    setTimeout(() => {
-      loader.classList.add('hide');
-      setTimeout(()=> loader.remove(), 600);
-    }, 900);
-  });
-
-  // Kick статус
-  const kickDot = document.getElementById('kick-dot');
-  const kickText = document.getElementById('kick-text');
-  const toggle = document.getElementById('admin-toggle');
-  let online = false;
-  toggle.addEventListener('click', () => {
-    online = !online;
-    if(online){
-      kickDot.style.background = "#00ff66";
-      kickText.textContent = "В сети";
-      document.querySelector('.kick-section').style.background = "rgba(0,255,100,0.05)";
-    }else{
-      kickDot.style.background = "red";
-      kickText.textContent = "Не в сети";
-      document.querySelector('.kick-section').style.background = "transparent";
-    }
-  });
-
-  // смена цвета логотипа при скролле
-  const brand = document.getElementById('brand-title');
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    const switchPoint = 300;
-    if(scrollY > switchPoint){
-      brand.classList.add('scrolled');
-    }else{
-      brand.classList.remove('scrolled');
-    }
-  });
-</script>
+    <custom-footer></custom-footer>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="loader.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
